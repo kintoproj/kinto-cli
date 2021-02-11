@@ -2,8 +2,6 @@
 
 Kinto CLI is a command line utility for accessing [kinto-core](https://github.com/kintoproj/kinto-core). Kinto CLI is written in Golang.
 
-<br>
-
 # Index
 
 - [Kinto CLI](#kinto-cli)
@@ -20,8 +18,6 @@ Kinto CLI is a command line utility for accessing [kinto-core](https://github.co
 - [CLI Commands](#cli-commands)
 - [Documentation](#documentation)
 - [License](#license)
-
-<br>
 
 # Installation
 
@@ -60,9 +56,6 @@ iwr -useb raw.githubusercontent.com/kintoproj/kinto-cli/main/install.ps1 | iex
 ```
 
 `Note :` You can also download the latest available release for your Operating System from [releases](https://github.com/kintohub/kinto-cli/releases) and add it to your global `PATH` manually.
-
-
-<br>
 
 # Development
 
@@ -127,18 +120,12 @@ Follow the below-given instructions to set up the project locally.
   go install
   ```
 
-<br>
-
 # CLI Commands
 
 For a detailed overview of the available CLI commands see [CLI docs](https://kintohub.com/anatomy/cli#commands).
 
-<br>
-
 # Documentation
 
 Check out the official KintoHub [Documentation](https://kintohub.com/).
-
-<br>
 
 # License
