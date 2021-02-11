@@ -2,7 +2,7 @@ package api
 
 import (
 	"crypto/x509"
-	"github.com/kintohub/kinto-cli/internal/utils"
+	"github.com/kintoproj/kinto-cli/internal/utils"
 	"github.com/kintoproj/kinto-core/pkg/types"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"

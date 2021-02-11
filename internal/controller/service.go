@@ -2,8 +2,8 @@ package controller
 
 import (
 	"fmt"
-	"github.com/kintohub/kinto-cli/internal/api"
-	"github.com/kintohub/kinto-cli/internal/utils"
+	"github.com/kintoproj/kinto-cli/internal/api"
+	"github.com/kintoproj/kinto-cli/internal/utils"
 	"github.com/olekukonko/tablewriter"
 	"os"
 )

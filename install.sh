@@ -15,7 +15,7 @@ OUT_DIR="/usr/local/bin"
 NEED_SUDO=0
 
 #CLI related values
-OWNER="kintohub"
+OWNER="kintoproj"
 REPO_NAME="kinto-cli"
 CLI_NAME="kinto"  #will be the final name of the CLI command.
 GH="https://github.com"

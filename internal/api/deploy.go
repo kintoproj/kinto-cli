@@ -2,7 +2,7 @@ package api
 
 import (
 	"context"
-	"github.com/kintohub/kinto-cli/internal/utils"
+	"github.com/kintoproj/kinto-cli/internal/utils"
 	"github.com/kintoproj/kinto-core/pkg/types"
 )
 

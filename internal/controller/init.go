@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"github.com/kintohub/kinto-cli/internal/config"
+	"github.com/kintoproj/kinto-cli/internal/config"
 )
 
 //Set kintoCoreHost for CLI or reset it to default production host.

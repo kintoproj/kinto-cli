@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/Terry-Mao/goconf"
 	"github.com/golang/protobuf/ptypes"
-	"github.com/kintohub/kinto-cli/internal/config"
+	"github.com/kintoproj/kinto-cli/internal/config"
 	"github.com/kintoproj/kinto-core/pkg/types"
 	"github.com/rs/zerolog/log"
 	"net"

@@ -2,8 +2,8 @@ package cli
 
 import (
 	"fmt"
-	"github.com/kintohub/kinto-cli/internal/config"
-	"github.com/kintohub/kinto-cli/internal/controller"
+	"github.com/kintoproj/kinto-cli/internal/config"
+	"github.com/kintoproj/kinto-cli/internal/controller"
 	"github.com/mitchellh/go-homedir"
 	"github.com/spf13/cobra"
 	"os"

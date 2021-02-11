@@ -30,7 +30,7 @@ jobs:
           targets: windows/amd64,linux/amd64,darwin/amd64
           v: true
           x: false
-          ldflags: -X "github.com/kintohub/kinto-cli/internal/config.Version=${{ env.CLI_VERSION }}"
+          ldflags: -X "github.com/kintoproj/kinto-cli/internal/config.Version=${{ env.CLI_VERSION }}"
 
       - name: Rename & compress binaries
         run: |

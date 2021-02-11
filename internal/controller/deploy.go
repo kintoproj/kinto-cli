@@ -2,7 +2,7 @@ package controller
 
 import (
 	"fmt"
-	"github.com/kintohub/kinto-cli/internal/utils"
+	"github.com/kintoproj/kinto-cli/internal/utils"
 )
 
 //Triggers a deploy action for a given service

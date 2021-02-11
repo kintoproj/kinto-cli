@@ -1,9 +1,9 @@
 ﻿#Requires -Version 5
 
 # remote install commands:
-#   Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/kintohub/kinto-cli/master/install.ps1')
-#   iex (new-object net.webclient).downloadstring('https://raw.githubusercontent.com/kintohub/kinto-cli/master/install.ps1')
-#   iwr https://raw.githubusercontent.com/kintohub/kinto-cli/master/install.ps1 | iex
+#   Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/kintoproj/kinto-cli/master/install.ps1')
+#   iex (new-object net.webclient).downloadstring('https://raw.githubusercontent.com/kintoproj/kinto-cli/master/install.ps1')
+#   iwr https://raw.githubusercontent.com/kintoproj/kinto-cli/master/install.ps1 | iex
 
 
 $old_erroractionpreference = $erroractionpreference
@@ -28,7 +28,7 @@ if ((Get-ExecutionPolicy).ToString() -notin $allowedExecutionPolicy) {
 Write-Output 'Initializing...'
 
 #Variables
-$repoName = "kintohub/kinto-cli"
+$repoName = "kintoproj/kinto-cli"
 $releaseName = "cli-kinto-win-amd64.zip"
 $installationPath = $ENV:UserProfile+"\kinto"
 
