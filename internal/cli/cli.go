@@ -77,15 +77,15 @@ func (c *Cli) Execute(controller controller.ControllerInterface) {
 func createInitCommand(controller controller.ControllerInterface) *cobra.Command {
 	initCmd := &cobra.Command{
 		Use:   "init",
-		Short: "Init the CLI",
-		Long:  `Create a 'kinto.yaml' file in your home directory`,
+		Short: "Initialize the CLI with a Core Host",
+		Long:  `Create a 'kinto.yaml' file in your home directory and set the core host for the CLI.`,
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
 			controller.Init(args[0])
 		},
 	}
-	initCmd.SetUsageTemplate("\nUsage:\nSet new master host:\n\t" +
-		"kinto init [host]\n\nReset master host:\n\tkinto init default\n")
+	initCmd.SetUsageTemplate("\nUsage:\nSet new Core Host:\n\t" +
+		"kinto init [host]\n\nReset/Delete Core Host:\n\tkinto init reset\n")
 	return initCmd
 }
 
