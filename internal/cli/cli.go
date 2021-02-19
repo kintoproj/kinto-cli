@@ -84,8 +84,8 @@ func createInitCommand(controller controller.ControllerInterface) *cobra.Command
 			controller.Init(args[0])
 		},
 	}
-	initCmd.SetUsageTemplate("\nUsage:\nSet new Core Host:\n\t" +
-		"kinto init [host]\n\nReset/Delete Core Host:\n\tkinto init reset\n")
+	initCmd.SetUsageTemplate(fmt.Sprintf("\nUsage:\nSet new Core Host:\n\t"+
+		"kinto init [host]\n\nUnset Core Host:\n\tkinto init %s\n", config.CoreHostResetKey))
 	return initCmd
 }
 
@@ -171,16 +171,15 @@ func createAccessCommand(controller controller.ControllerInterface) *cobra.Comma
 
 func createDeployCommand(controller controller.ControllerInterface) *cobra.Command {
 	return &cobra.Command{
-		Use:     "deploy",
-		Short:   "Trigger deploy a service",
-		Long: `Trigger the deploy action for a given service inside an environment`,
-		Args: cobra.ExactArgs(2),
+		Use:   "deploy",
+		Short: "Trigger deploy a service",
+		Long:  `Trigger the deploy action for a given service inside an environment`,
+		Args:  cobra.ExactArgs(2),
 		Run: func(cmd *cobra.Command, args []string) {
 			controller.Deploy(args[0], args[1])
 		},
 	}
 }
-
 
 func createTeleportCommand(controller controller.ControllerInterface) *cobra.Command {
 	accessCmd := &cobra.Command{
