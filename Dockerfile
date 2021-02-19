@@ -9,5 +9,5 @@ RUN GOOS=linux GOARCH=amd64 go build -ldflags="-X 'github.com/kintoproj/kinto-cl
 
 FROM alpine
 WORKDIR /app
-COPY --from=builder /app .
+COPY --from=builder /app/kinto /bin
 ENTRYPOINT ["/app/kinto"]
