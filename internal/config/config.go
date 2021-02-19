@@ -11,6 +11,7 @@ const (
 	CliConfigName                = "kinto.yaml"
 	KintoCoreHostKey             = "kintoCoreHost"
 	DefaultTeleportInterfacePort = "R:0.0.0.0"
+	CoreHostResetKey             = "reset"
 	DefaultClientAccessPort      = 5360
 	DefaultClientTeleportPort    = 8080
 	RedisPort                    = 6379
